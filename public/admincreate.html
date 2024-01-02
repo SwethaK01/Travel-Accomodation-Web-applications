@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+
+<title>Travel</title>
+<link rel="stylesheet" type="text/css" href="adminstyles.css">
+</head>
+<body>
+  <body>
+    <form action="/adminsign" method="POST">
+
+    <div class="login-page">
+      <div class="form">
+        <div class="login">
+          <div class="login-header">
+            <h3>Create Account</h3>
+            <p>Enter your credentials to create account.</p>
+          </div>
+        </div>
+        <form class="login-form" id="myForm">
+          
+          <input pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Please enter on alphabets only. ')"
+            oninput="setCustomValidity('')" type="text" class="form-control" name="username" placeholder="Enter Your name">
+            
+          <input pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Please enter on alphabets only. ')"
+            oninput="setCustomValidity('')" type="text" class="form-control" name="email" placeholder="Enter Your email ">
+
+
+          <input pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Please enter on alphabets only. ')"
+            oninput="setCustomValidity('')" type="text" class="form-control" name="password"placeholder="Enter Password" >
+            
+          <input pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Please enter on alphabets only. ')"
+            oninput="setCustomValidity('')" type="text" class="form-control" name="confirmPassword" placeholder="Reenter your Password" >
+        <button>Create</button>
+          <p>or</p>
+          <a href="adminlogin.html" class="cls-btn" role="button">Login</a>
+
+
+          
+        </form>
+      </div>
+    </div>
+    
+    <script>
+      document.getElementById("myForm").onsubmit = function (event) {
+          var name = document.getElementById("username").value;
+          var email = document.getElementById("email").value;
+          var message = document.getElementById("password").value;
+          var message1 = document.getElementById("confirmPassword").value;
+          var hasError = false;
+
+          if (name === "") {
+              document.getElementById("name").style.border = "2px solid red";
+              hasError = true;
+          }
+
+          if (email === "") {
+              document.getElementById("email").style.border = "2px solid red";
+              hasError = true;
+          }
+          if (message === "") {
+              document.getElementById("message").style.border = "2px solid red";
+              hasError = true;
+          }
+          if (message === "") {
+              document.getElementById("message1").style.border = "2px solid red";
+              hasError = true;
+          }
+
+          if (hasError) {
+              event.preventDefault();
+          }
+      };
+  </script>
+    </form>
+</body>
+</body>
+</html>

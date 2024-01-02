@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    
+    <title>TraVel</title>
+    <link rel="stylesheet" type="text/css" href="hotel.css">
+</head>
+
+<body>
+    <section class="nav-bar">
+        <div class="logo">TraVel</div>
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li> 
+            <li><a href="profile.html">Profile</a</li>                
+            <li><a href="front_page.html">Logout</a></li>
+           
+           
+        </ul>
+        </div>
+
+    </section>
+
+    <!-- Create a filter section to select a place -->
+    <div class="filter-section">
+        <label class="filter-label" for="place">Filter by place:</label>
+        <select class="filter-select" id="place" onchange="filterHotels()">
+            <option value="all">All</option>
+            <option value="portblair">Portblair</option>
+            <option value="neil">Neil Island</option>
+            <option value="havelock">Havelock Island</option>
+            <option value="diglipur">Diglipur</option>
+        </select>
+    </div>
+
+    <!-- Create a hotel list to display the hotels -->
+    <div class="hotel-list" id="hotel-list">
+        <!-- Create a hotel item for each hotel -->
+        <div class="hotel-item" data-place="portblair">
+            <img class="hotel-image" src="https://ui.cltpstatic.com/places/hotels/7363/736324/images/resort_w.jpg"
+                alt="Hotel 1">
+            <div class="hotel-details">
+                <div class="hotel-name">Grand Oceanus Resort</div>
+                <div class="hotel-price">₹ 5500 per night</div>
+                <div class="hotel-rating">★★★★☆</div>
+                <div class="hotel-address">Portblair ,Andamam and Nicobar Islands</div>
+                <a href="h1.html" class="btn btn-info" role="button">Book Now</a>
+            </div>
+        </div>
+        <div class="hotel-item" data-place="portblair">
+            <img class="hotel-image"
+                src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/326722431.jpg?k=d36f83eb7e48c0437e8a395282cd11c7194e9705f917ae21202b51616aa2d462&o="
+                alt="Hotel 4">
+            <div class="hotel-details">
+                <div class="hotel-name">Coral Reef Port Blair</div>
+                <div class="hotel-price">₹ 4900 per night</div>
+                <div class="hotel-rating">★★★☆☆</div>
+                <div class="hotel-address">Portblair,Andamam and Nicobar Islands</div>
+                <a href="h2.html" class="btn btn-info" role="button">Book Now</a>
+            </div>
+        </div>
+        <div class="hotel-item" data-place="portblair">
+            <img class="hotel-image"
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/23/8b/ab/grand-paradise.jpg?w=700&h=-1&s=1port blair"
+                alt="Hotel 4">
+            <div class="hotel-details">
+                <div class="hotel-name">Grand Paradise</div>
+                <div class="hotel-price">₹ 3000 per night</div>
+                <div class="hotel-rating">★★★☆☆</div>
+                <div class="hotel-address">Portblair ,Andamam and Nicobar Islands</div>
+                <a href="h3.html" class="btn btn-info" role="button">Book Now</a>
+            </div>
+        </div>
+        <div class="hotel-item" data-place="neil">
+            <img class="hotel-image"
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/84/46/2e/img-20190514-214155929.jpg?w=900&h=-1&s=1"
+                alt="Hotel 2">
+            <div class="hotel-details">
+                <div class="hotel-name">Symphony Summer Sands</div>
+                <div class="hotel-price">₹ 14000 per night</div>
+                <div class="hotel-rating">★★★★★</div>
+                <div class="hotel-address">Neil Island, Andamam and Nicobar Islands</div>
+                <a href="h4.html" class="btn btn-info" role="button">Book Now</a>
+            </div>
+        </div>
+        <div class="hotel-item" data-place="neil">
+            <img class="hotel-image" src="https://th.bing.com/th/id/OIP.JWn1xk1RHp9n2oIL3h1FpAHaFj?pid=ImgDet&rs=1"
+                alt="Hotel 3">
+            <div class="hotel-details">
+                <div class="hotel-name">Sea Shell Samssara</div>
+                <div class="hotel-price">₹ 12000 per night</div>
+                <div class="hotel-rating">★★★☆☆</div>
+                <div class="hotel-address">Neil Island, Andamam and Nicobar Islands</div>
+                <a href="h12.html" class="btn btn-info" role="button">Book Now</a>
+            </div>
+        </div>
+        <div class="hotel-item" data-place="neil">
+            <img class="hotel-image" src="https://q-xx.bstatic.com/xdata/images/hotel/max500/467757551.jpg?k=cee7a5d67046ccef3608cd71409942389992a7e84efe1fcb337e6a35c857b31a&s=450x450"
+                alt="Hotel 3">
+            <div class="hotel-details">
+                <div class="hotel-name">Dream Valley Resort</div>
+                <div class="hotel-price">₹ 3000 per night</div>
+                <div class="hotel-rating">★★☆☆☆</div>
+                <div class="hotel-address">Neil Island, Andamam and Nicobar Islands</div>
+                <a href="h5.html" class="btn btn-info" role="button">Book Now</a>
+            </div>
+        </div>
+        
+        <div class="hotel-item" data-place="havelock">
+            <img class="hotel-image"
+                src="https://i.pinimg.com/originals/47/a3/d2/47a3d2bd143cfad00fc29d110d883665.jpg"
+                alt="Hotel 4">
+            <div class="hotel-details">
+                <div class="hotel-name">Silver sand Beach Resort</div>
+                <div class="hotel-price">₹ 10400 per night</div>
+                <div class="hotel-rating">★★★★☆</div>
+                <div class="hotel-address">Havelock Island,Andamam and Nicobar Islands</div>
+                <a href="h7.html" class="btn btn-info" role="button">Book Now</a>
+            </div>
+        </div>
+
+        <div class="hotel-item" data-place="havelock">
+            <img class="hotel-image"
+                src="https://pix8.agoda.net/hotelImages/489716/-1/945d00bd2f6e102082fd5362ee3137ef.jpg?ca=15&ce=1&s=450x450"
+                alt="Hotel 4">
+            <div class="hotel-details">
+                <div class="hotel-name">Munjoh Ocean Resort</div>
+                <div class="hotel-price">₹ 8400 per night</div>
+                <div class="hotel-rating">★★★★☆</div>
+                <div class="hotel-address">Havelock Island,Andamam and Nicobar Islands</div>
+                <a href="h6.html" class="btn btn-info" role="button">Book Now</a>
+            </div>
+        </div>
+
+        <div class="hotel-item" data-place="havelock">
+            <img class="hotel-image"
+                src="https://pix8.agoda.net/hotelImages/817341/-1/6487a56c9b563d66a29bf3e1d23a3de3.png?ce=0&s=450x450"
+                alt="Hotel 4">
+            <div class="hotel-details">
+                <div class="hotel-name">Havelock Island Beach Resort</div>
+                <div class="hotel-price">₹ 6500 per night</div>
+                <div class="hotel-rating">★★★☆☆</div>
+                <div class="hotel-address">Havelock Island,Andamam and Nicobar Islands</div>
+                <a href="h8.html" class="btn btn-info" role="button">Book Now</a>
+            </div>
+        </div>
+        
+        <div class="hotel-item" data-place="diglipur">
+            <img class="hotel-image"
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/21/fc/4a/pristine-beach-resort.jpg?w=300&h=300&s=1"
+                alt="Hotel 4">
+            <div class="hotel-details">
+                <div class="hotel-name">Pristine Beach Resort</div>
+                <div class="hotel-price">₹ 4500 per night</div>
+                <div class="hotel-rating">★★☆☆☆</div>
+                <div class="hotel-address">Diglipur,Andamam and Nicobar Islands</div>
+                <a href="h9.html" class="btn btn-info" role="button">Book Now</a>
+            </div>
+        </div>
+
+         <div class="hotel-item" data-place="diglipur">
+            <img class="hotel-image"
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/82/4b/20/bliss-holiday-resorts.jpg?w=300&h=300&s=1"
+                alt="Hotel 4">
+            <div class="hotel-details">
+                <div class="hotel-name">Bliss Holiday Resort</div>
+                <div class="hotel-price">₹ 7500 per night</div>
+                <div class="hotel-rating">★★★☆☆</div>
+                <div class="hotel-address">Diglipur,Andamam and Nicobar Islands</div>
+                <a href="h10.html" class="btn btn-info" role="button">Book Now</a>
+            </div>
+        </div>
+
+         <div class="hotel-item" data-place="diglipur">
+            <img class="hotel-image"
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/4e/64/68/saddle-peak-view-resort.jpg?w=300&h=300&s=1"
+                alt="Hotel 4">
+            <div class="hotel-details">
+                <div class="hotel-name">Sandal Peak View Resort</div>
+                <div class="hotel-price">₹ 5000 per night</div>
+                <div class="hotel-rating">★★☆☆☆</div>
+                <div class="hotel-address">Diglipur,Andamam and Nicobar Islands</div>
+                <a href="h11.html" class="btn btn-info" role="button">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add some JavaScript code to filter the hotels by place -->
+    <script>
+        // Get the filter select element
+        var filterSelect = document.getElementById("place");
+
+        // Get the hotel list element
+        var hotelList = document.getElementById("hotel-list");
+
+        // Define a function to filter the hotels by place
+        function filterHotels() {
+            // Get the selected place value
+            var place = filterSelect.value;
+
+            // Loop through all the hotel items
+            for (var i = 0; i < hotelList.children.length; i++) {
+                // Get the hotel item element
+                var hotelItem = hotelList.children[i];
+
+                // Get the hotel place attribute
+                var hotelPlace = hotelItem.getAttribute("data-place");
+
+                // Check if the hotel place matches the selected place or the selected place is all
+                if (hotelPlace == place || place == "all") {
+                    // Show the hotel item
+                    hotelItem.style.display = "block";
+                } else {
+                    // Hide the hotel item
+                    hotelItem.style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+   
+   
+    <link rel="stylesheet" type="text/css" href="payment.css">
+    <title>Payment</title>
+</head>
+
+<body>
+
+    <body>
+
+       
+    
+    <div class="container">
+        <h2>Select Bank and Payment Method</h2>
+        <form>
+            <label for="bank">Select Bank: </label>
+            <select id="bank" name="bank" required>
+                <option value="bank1">Choose your Bank</option>
+                <option value="bank1">State bank of India</option>
+                <option value="bank2">Canara Bank</option>
+                <option value="bank3">Indian Bank</option>
+                <option value="bank4">HDFC Bank</option>
+                <option value="bank4">ICICI Bank</option>
+                <option value="bank4">Punjab National Bank</option>
+                <option value="bank4">Bank of Baroda</option>
+                <option value="bank4">Other banks</option>
+            </select>
+            <label></label>
+
+            <label>Payment Method:</label>
+
+            <div class="payment-method">
+                <input type="radio" id="debit" name="payment" value="debit">
+                <label for="debit">Debit Card</label>
+
+                <input type="radio" id="credit" name="payment" value="credit">
+                <label for="credit">Credit Card</label>
+
+                <input type="radio" id="upi" name="payment" value="upi">
+                <label for="upi">UPI</label>
+
+                <input type="radio" id="netbanking" name="payment" value="netbanking">
+                <label for="netbanking">Net Banking</label>
+
+                <input type="radio" id="others" name="payment" value="others">
+                <label for="others">Others</label>
+            </div>
+
+            <div class="submit-button">
+                <a href="successpay.html" class="login-page" role="button">Submit</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

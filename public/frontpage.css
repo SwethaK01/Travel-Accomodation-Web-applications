@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background:rgb(178, 212, 223);
+  font-family: "Satisfy";
+ 
+  font-size: 30px;
+  text-align: center;
+}
+
+.login-form {
+  background: #fff;
+  width: 550px;
+  margin: 65px auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+}
+
+.login-form h1 {
+  padding: 35px 35px 0 35px;
+  font-weight: 300;
+}
+
+.login-form .content {
+  padding: 35px;
+  text-align: center;
+}
+
+.login-form .input-field {
+  padding: 12px 5px;
+}
+
+.login-form .input-field input {
+  font-size: 16px;
+  display: block;
+  font: Berkshire Swash;
+  width: 100%;
+  padding: 10px 1px;
+  border: 0;
+  border-bottom: 1px solid #747474;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.login-form a.link {
+  text-decoration: none;
+
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 20px;
+  background: black;
+  color: #fff;
+}
+
+.login-form .action {
+  display: -webkit-box;
+  display: flex;
+
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+}
+
+.login-form .action button {
+  width: 100%;
+  border: none;
+  padding: 18px;
+  font: "Berkshire Swash";
+  cursor: pointer;
+  text-transform: uppercase;
+
+  color: black;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  letter-spacing: 0.2px;
+  outline: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+
+.login-form .action button:nth-child(2) {
+  background: blueviolet;
+  color: #fff;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 4px;
+}
+
+.login-form .action button:nth-child(2):hover {
+  background: #3c4d6d;
+}
+
+.cls-btn {
+
+  background: lightblue;
+  font-family: "arial";
+  text-transform: uppercase;
+  text-decoration: none;
+  max-width: 100px;
+  border: 20%;
+  padding: 20px;
+  position: relative;
+  z-index: 100;
+  color: black;
+  line-height: normal;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  margin: 0 0 15px;
+  justify-content: center;
+
+}

@@ -1,0 +1,101 @@
+
+
+input {
+  display: inline-block!important;
+ 
+}
+       
+        .body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 400px;
+            max-height: 1000px;
+            margin: 150 auto;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            text-align: left;
+            font-size: 27px;
+            font-weight: bold;
+            padding-bottom: 1%;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 1px;
+        }
+
+        .payment-method {
+            margin-top: 20px;
+            padding-bottom: 10px;
+
+        }
+
+        .payment-method label {
+            font-weight: lighter;
+            display: inline-block;
+            padding-bottom: 10%;
+
+        }
+
+        .payment-method input[type="radio"] {
+          padding-left: 50px;
+            margin-right:1px;
+           
+        }
+
+        .submit-button {
+            text-align: center;
+            margin-top: 5px;
+
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+      
+        
+        
+        body {
+          background-color:  rgb(178, 212, 223);
+          
+          font-family: "arial";
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+        .login-page
+        {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+
+        }
+        

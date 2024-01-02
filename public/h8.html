@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="newh.css">
+    <title>Hotel Booking</title>
+   
+</head>
+<body>
+    <div class="container">
+        <h1>Select Hotel</h1>
+        
+        <!-- Hotel List -->
+        <div class="hotel">
+            <img class="hotel-image" src="https://pix8.agoda.net/hotelImages/817341/-1/6487a56c9b563d66a29bf3e1d23a3de3.png?ce=0&s=450x450" alt="Hotel 2">
+            <h2>Havelock Island Beach Resort</h2>
+            
+            <p>Amenities : 1 double bed
+                Room size: 42 m²/452 ft²
+                Sea view
+                Balcony/terrace</p>
+            <p>★★★☆☆</p>
+            <img class="bed" src="https://th.bing.com/th?id=OIP.jI9rruGSAQNGmMicjyVJFAHaI7&w=227&h=274&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2">
+          
+            <p>Neil Island, Andaman and Nicobar Islands</p>
+            <h3>Rs 6500/night</h3>
+        </div>
+
+        <!-- Booking Form -->
+        <div class="booking-form">
+            <h2>Book Havelock Island Beach Resort</h2>
+            <form action="/booking7" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="check-in">Check-in Date:</label>
+                    <input type="date" id="check-in" name="check" onchange="calculateDays()" required>
+                </div>
+                <div class="form-group">
+                    <label for="check-out">Check-out Date:</label>
+                    <input type="date" id="check-out" name="checks" onchange="calculateDays()" required>
+                </div>
+                <br></br>
+                <h2>Cost Details</h2>
+                <br></br>
+                <label>Total Cost: Rs </label>
+                <label  id="result"></label>
+                <br></br>
+                <label> Per day: Rs 6500</label>
+                <br></br>
+                <button>Pay Now</button>
+                 </form>
+        </div>
+    </div>
+    
+
+
+            <script>
+                // A function that calculates and displays the number of days between two dates
+                function calculateDays() {
+                    // Get the input elements by their ids
+                    const startDate = document.getElementById("check-in");
+                    const endDate = document.getElementById("check-out");
+                    const result = document.getElementById("result");
+
+                    // Create Date objects from the input values
+                    const date1 = new Date(startDate.value);
+                    const date2 = new Date(endDate.value);
+
+                    // One day in milliseconds
+                    const oneDay = 1000 * 60 * 60 * 24;
+
+                    // Calculate the difference in milliseconds
+                    const diffInTime = date2.getTime() - date1.getTime();
+
+                    // Convert the difference to days and display
+                    const diffInDays = Math.round(diffInTime / oneDay);
+                    result.innerHTML = "" + diffInDays * 6500;
+                }
+            </script>
+
+</body>
+
+</html>
+       

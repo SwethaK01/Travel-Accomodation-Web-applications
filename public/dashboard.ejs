@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Records</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <form action="/dashboard" method="post">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Check-in</th>
+                <th>Check-out</th>
+                <th>Number of days</th>
+                <th>Total cost</th>
+            </tr>
+            <% bookings.forEach((booking) => { %>
+                <tr>
+                    <td><%= booking.name %></td>
+                    <td><%= booking.email %></td>
+                    <td><%= booking.checkin %></td>
+                    <td><%= booking.checkout %></td>
+                    <td><%= booking.numberofdays %></td>
+                    <td><%= booking.Totalcost %></td>
+                </tr>
+            <% }) %>
+        </table>
+    </form>
+</body>
+</html>
